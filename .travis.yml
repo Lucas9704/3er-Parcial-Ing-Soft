@@ -1,12 +1,19 @@
 language: node_js
 
-node_js:
-- node
-- 'lts/*'
-
 cache:
   directories:
   - node_modules
+  - ~/.npm
+
+  node_js:
+    - '14.17.0'
+  
+  branches:
+    only:
+      - main
+
+  script:
+    - npm start
 
 notifications:
   slack: puebascircle:TO02QRx5beoDFlwxJVV1xpmm
