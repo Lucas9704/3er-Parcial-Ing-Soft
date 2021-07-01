@@ -8,10 +8,10 @@ const app = express()
 
 app.get('/' ,(req, res ) =>{
     let Estado = 'hola';
-    if (situacion.difCondicion(7)===true) {
+    if (situacion.difCondicion(3)===true) {
         Estado='Aprobaste la instancia de evaluación'
     } else {
-       Estado='No aprobaste la instancia de evaluación :('
+       Estado='No aprobaste la instancia de evaluación:('
     }
     res.status(200).send(Estado);
 });
