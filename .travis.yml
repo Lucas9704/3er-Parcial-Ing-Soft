@@ -3,7 +3,7 @@ language: node_js
 cache:
   directories:
   - node_modules
-  
+
   node_js:
     - '14.17.0'
   
@@ -13,6 +13,7 @@ cache:
 
   script:
     - npm start
+    - npm test
 
 notifications:
   slack: puebascircle:TO02QRx5beoDFlwxJVV1xpmm
