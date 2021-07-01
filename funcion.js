@@ -16,6 +16,6 @@ app.get('/' ,(req, res ) =>{
     res.status(200).send(Estado);
 });
 
-app.listen(3000,()=>{
-    console.log( 'API REST corriendo en http://localhost:3000')
+app.listen(8000,()=>{
+    console.log( 'API REST corriendo en http://localhost:8000')
 })

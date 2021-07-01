@@ -15,5 +15,12 @@ branches:
 script:
   - npm test
 
+deploy:
+  provider: heroku
+  api_key: "$HEROKU_KEY"
+  on:
+    branch: main
+  app: aprobarparcial
+
 notifications:
   slack: puebascircle:TO02QRx5beoDFlwxJVV1xpmm
