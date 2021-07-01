@@ -16,6 +16,11 @@ app.get('/' ,(req, res ) =>{
     res.status(200).send(Estado);
 });
 
-app.listen(8000,()=>{
-    console.log( 'API REST corriendo en http://localhost:8000')
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
+app.listen(port,()=>{
+    console.log( `API REST corriendo en http://localhost:${port}`)
 })
