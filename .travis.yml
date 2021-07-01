@@ -3,6 +3,7 @@ language: node_js
 cache:
   directories:
   - node_modules
+  - ~/.npm
 
 node_js:
   - '14.17.0'
@@ -12,7 +13,6 @@ branches:
    - main
 
 script:
-  - npm start
   - npm test
 
 notifications:
