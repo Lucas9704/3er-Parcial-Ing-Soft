@@ -1,1 +1,1 @@
-web: funcion.js
+web:npm start
